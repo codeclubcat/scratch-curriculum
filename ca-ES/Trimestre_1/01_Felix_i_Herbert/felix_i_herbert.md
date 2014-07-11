@@ -85,7 +85,7 @@ Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.
 	Quan la BANDERA VERDA es premi
 	fixa la rotació a [esquerra-dreta v]
 	per sempre
-		apunta cap al [punter del ratolí v]
+		apunta cap a [punter del ratolí v]
 		mou-te (10) passos
 		següent vestit
 		toca el tambor [3 v] durant (0.3) pulsacions
@@ -115,7 +115,7 @@ En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en u
 ```blocks
 	Quan la BANDERA VERDA es premi
 	per sempre
-		apunta cap al [punter del ratolí v]
+		apunta cap a [punter del ratolí v]
 		mou-te (10) passos
         mou-te (20) passos
         següent vestit
@@ -134,7 +134,7 @@ En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en u
 + Creeu un nou programa per tal de convertir en Herbert en un fantasma:
 
 ```blocks
-    en rebre [atrapat v]
+    quan rebi [atrapat v]
        canvia el vestit a [fantasma v]
        espera (1) segons
        canvia el vestit a [viu v]
@@ -170,7 +170,7 @@ Afegirem un marcador de manera que sabrem com de bé mantenim al Herbert en vida
           espera (1) segons
        end
 		
-	en rebre [atrapat v]
+	quan rebi [atrapat v]
        augmenta [puntuació v] en (-100)
 ```
 
