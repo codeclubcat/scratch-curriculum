@@ -42,7 +42,6 @@ Com és que s'encalla a la vora de la pantalla?
 + Per tal de que la bruixa no s'encalli, feu que giri cua en tocar la vora de la pantalla. Sota el bloc __"mou-te velocitat passos"__ afegiu-hi el bloc  __"rebota en tocar una vora"__.
 
 + A més a més, per tal que la bruixa no es giri de caps per avall, utilitzeu el bloc __"fixa la rotació a" on seleccionarem esquerra-dreta.
-
 ```blocks
 	quan la BANDERA VERDA es premi
 	   fixa la rotació a [esquerra-dreta v]
@@ -125,7 +124,6 @@ Feu clic a la bandera verda.
 Tot i que ja tenim llesta la  bruixa, el nostre objectiu és crear un joc! Afegirem un marcador que ens servirà per anar anotant els punts cada cop que cliquem a sobre de la bruixa abans no s'acabi un temps. Per tant, necessitarem una variable per al temps i una altra per al marcador.
 
 + Creeu una nova variable __per tots els personatges__ que es digui **marcador** i retoqueu l'script perquè s'incrementi en un punt el marcador cada cop que s'atrapa la bruixa.
-
 ```blocks
 	quan es cliqui aquest personatge
        amaga
