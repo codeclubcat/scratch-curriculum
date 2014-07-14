@@ -19,6 +19,13 @@
             "pdf":      "02_Caça_la_Bruixa/caça_la_bruixa.pdf",
             "note":     "02_Caça_la_Bruixa/Notes_per_als_caps_de_club.md",
             "note_pdf": "02_Caça_la_Bruixa/Notes_per_als_caps_de_club.pdf"
-        }       
+        },
+        {
+            "number":   3,
+            "filename": "03_Focs_Artificials/focs_artificials.md",
+            "pdf":      "03_Focs_Artificials/focs_artificials.pdf",
+            "note":     "03_Focs_Artificials/Notes_per_als_caps_de_club.md",
+            "note_pdf": "03_Focs_Artificials/Notes_per_als_caps_de_club.pdf"
+        }
     ]
 }
