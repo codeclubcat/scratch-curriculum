@@ -6,26 +6,6 @@ stylesheet: scratch
 embeds: "*.png"
 ...
 
-<!--
-
-Utilitzeu vs Useu vs feu servir
-script vs tros de codi
-"Comproveu que la bruixa es segueix movent de banda a banda de la pantalla" vs "La bruixa es segueix movent de banda a banda de la pantalla?"
-fer clic/clicar vs prémer
-Al prémer vs en prémer (al codi ha de ser "al" perque SCratch ho te aixi, pero i al text? )
- 
-6
- 
-Nivell 
-Whack-a-Witch
-
- * Pas 1: Crear una bruixa voladora
-* Pas 2: Fer aparèixer i desaparèixer la bruixa de manera al.leatòria
-* Pas 3: Fer desaparèixer la bruixa després de cliclar-hi al damunt
-* Pas 4: Afegir el marcador i el temps (score, timer)
-
- -->
-
 # Introducció { .intro }
 
 Aquest projecte s´inspira en el joc de fira d´origen anglès anomenat  __Whack-a-Mole__. Obtindreu punts en clicar les bruixes que apareixen a la pantalla. L'objectiu del joc és obtenir el màxim de punts en 30 segons!
