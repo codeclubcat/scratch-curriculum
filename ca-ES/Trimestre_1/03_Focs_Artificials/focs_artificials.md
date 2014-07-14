@@ -24,16 +24,15 @@ Importem les imatges necessàries per el nostre joc
 + Utilitzeu el botó `escull un personatge des d'un fitxer` (una carpeta amb una fletxa amunt) per afegir el personatge **Coet** al projecte (utilitzeu el vestit **recursos/coet.png**).
 + Feu que el coet desaparegui quan es premi la bandera verda.
 ```blocks
-    quan la BANDERA VERDA es premi
-      amaga
+quan la BANDERA VERDA es premi
+    amaga
 ```
 
 + Ara volem que el coet apunti el ratolí quan el cliquem. Afegiu el bloc **quan es cliqui la tecla espai**. En aquest bloc feu que el coet aparegui i llisqui en direcció al punter del ratolí.
-
 ```blocks
-	quan la tecla [espai v] es premi
-      mostra
-      llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
+quan la tecla [espai v] es premi
+    mostra
+    llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
 ```
 
 ## Proveu el projecte { .flag }
@@ -46,15 +45,14 @@ Premeu la bandera verda, poseu el ratolí sobre l'escenari i premeu la tecla esp
 ## Llista de tasques { .check }
 
 + Els focs artificials no es solen moure de costat a costat, o sigui que ara ens hem d'assegurar que el nostre coet llisca en direcció al ratolí sortint sempre des de la part de baix de la pantalla. Abans de mostrar el coet, utilitzeu el bloc `vés a` { .blockblue } per dir-li al coet que es mogui cap a la part baixa de la pantalla conservant la seva posició horitzontal.
-
 ```blocks
-	quan la BANDERA VERDA es premi
-      amaga
-	
-	quan la tecla [espai v] es premi
-       vés a x: ratolí x y: -200
-       mostra
-       llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
+    quan la BANDERA VERDA es premi
+       amaga
+
+    quan la tecla [espai v] es premi
+        vés a x: (ratolí x) y: (-200)
+        mostra
+        llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
 ```
 
 ## Proveu el projecte { .flag }
@@ -68,15 +66,13 @@ Premeu la bandera verda, poseu el ratolí sobre l'escenari i premeu la tecla esp
 
 + Finalment, anem a veure si podem fer servir el botó del ratolí en comptes de la tecla espai. Per fer això, podem inserir un bloc `per sempre si ratolí clicat`, i llavors intercanviar el `quan la tecla espai es premi` per un `quan la BANDERA VERDA es premi`. I també cal assegurar-se que al principi el coet està amagat.
 ```blocks
-
-```blocks
-    quan la BANDERA VERDA es premi
-       amaga
-       per sempre 
-          si <ratolí clicat?> llavors
-             vés a x: (ratolí x) y: (-200)
-             mostra
-             llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
+quan la BANDERA VERDA es premi
+   amaga
+   per sempre 
+       si <ratolí clicat?> llavors
+           vés a x: (ratolí x) y: (-200)
+           mostra
+           llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
 ```
 
 ## Proveu el projecte { .flag }
@@ -89,7 +85,7 @@ Premeu la bandera verda, i després cliqueu el ratolí sobre l'escenari. Torneu 
 
 + Intenteu que alguns coets vagin més lents que d'altres.
 
-# Deseu el projecte { .save }
+## Deseu el projecte { .save }
 
 <!-- ///////////////////////////////////////////////////////////////////////////////// -->
 
@@ -98,12 +94,11 @@ Premeu la bandera verda, i després cliqueu el ratolí sobre l'escenari. Torneu 
 ## Llista d'activitats { .check }
 
 + El primer que us cal per fer explotar el coet és fer que soni una explosió just abans que comenci a moure's. El so el podeu trobar a la carpeta **Recursos/bang.wav**.  Llavors es tracta que s'amagui un cop arribi on és el ratolí. Per importar un so aneu a la **pestanya Sons** i cliqueu el botó `Puja so des d'un fitxer`.
-
 ```blocks
-   quan la BANDERA VERDA es premi
-      amaga
-      per sempre 
-         si ratolí premut? llavors
+quan la BANDERA VERDA es premi
+    amaga
+    per sempre 
+        si <ratolí clicat?> llavors
             vés a x: (ratolí x) y: (-200)
             toca el so [bang v]
             mostra
@@ -112,18 +107,17 @@ Premeu la bandera verda, i després cliqueu el ratolí sobre l'escenari. Torneu 
 ```
 
 + Feu també que el coet envii un missatge quan explota. Utilitzarem aquest missatge més endavant.
-
-```scratch
-    quan la BANDERA VERDA es premi
-       amaga
-       per sempre
-           si ratolí premut? llavors
-               vés a x: (ratolí x) y: (-200)
-               toca el so [bang v]
-               mostra
-               llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
-               amaga
-		       envia a tots [explota v] i espera
+```blocks
+quan la BANDERA VERDA es premi
+    amaga
+    per sempre
+        si <ratolí clicat?> llavors
+            vés a x: (ratolí x) y: (-200)
+            toca el so [bang v]
+            mostra
+            llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
+            amaga
+            envia a tots [explota v] i espera
 ```
 
 ## Proveu el projecte { .flag }
@@ -136,14 +130,13 @@ Premeu la bandera verda. Assegureu-vos que el coet toca un so i s'amaga quan arr
 + Importeu un nou personatge des del fitxer **Recursos/focartificial1.png**
 
 + Quan rebi el missatge "explota", s'ha d'amagar i moure's a la posició del coet fent servir la instrucció `vés a` { .blockblue }, després s'ha de mostrar i finalment s'ha d'amagar una altra vegada al cap d'un segon.
-
-```scratch
-     quan rebi [explota v]
-         amaga
-         vés a x: ([posició x v] de [coet v])  y: ([posició y v] de [coet v])
-         mostra
-         espera (1) segons
-         amaga
+```blocks
+quan rebi [explota v]
+    amaga
+    vés a x: ([posició x v] de [coet v])  y: ([posició y v] de [coet v])
+    mostra
+    espera (1) segons
+    amaga
 ```
 	
 ## Proveu el projecte { .flag }
@@ -153,22 +146,21 @@ Llenceu un altre coet.
 + Es canvia per un personatge d'explosió quan explota?
 + Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No us preocupeu, ja arreglarem això més tard).
 
-# Deseu el projecte { .save }
+## Deseu el projecte { .save }
 
 <!-- ///////////////////////////////////////////////////////////////////////////////// -->
 
 ## Pas 3: Fer que cada explosió sigui única { .activity }
 
-+ Ara podem fer que cada explosió sigui única utilitzant el bloc `fixa l'efect color` { .blockpurple } i triant un color aleatori entre **1** i **200** abans de mostrar-lo.
-
-```scratch
-    quan rebi [explota v]
-	    amaga
-	    fixa l'efecte [color v] a (nombre a l'atzar entre (1) i (200))
-	    vés a x: ([posició x v] del [coet v]) y: ([posició y v] del [coet v])
-	    mostra
-	    espera (1) segons
-	    amaga
++ Ara podem fer que cada explosió sigui única utilitzant el bloc `fixa l'efecte color` { .blockpurple } i triant un color aleatori entre **1** i **200** abans de mostrar-lo.
+```blocks
+quan rebi [explota v]
+    amaga
+	fixa l'efecte [color v] a (nombre a l'atzar entre (1) i (200))
+	vés a x: ([posició x v] de [coet v]) y: ([posició y v] de [coet v])
+	mostra
+	espera (1) segons
+	amaga
 ```
 
 ## Proveu el projecte { .flag }
@@ -188,19 +180,17 @@ Premeu bandera verda.
 ## Llista de tasques { .check }
 
 + Finalment, fem que cada explosió creixi amb el temps en comptes que aparegui i prou. Enlloc d'esperar un segon, fixeu el tamany del personatge al 5% abans de mostrar-lo, i una vegada l'hàgiu mostrat, augmenteu el tamany en 2 unitats cinquanta vegades, utilitzant el bloc `repeteix` { .blockorange }.
-
-
 ```blocks
-    quan rebi [explota v]
-	    amaga
-	    fixa l'efecte color a nombre a l'atzar entre 1 i 200
-	    vés a x: posició x del coet y: posició y del coet
-	    fixa la mida a 5%
-	    mostra
-	    repeteix 50
-	        augmenta 2 la mida
-	    end
-	    amaga
+quan rebi [explota v]
+	amaga
+	fixa l'efecte [color v] a (nombre a l'atzar entre (1) i (200))
+    vés a x: ([posició x v] de [coet v]) y: ([posició y v] de [coet v])
+    fixa la mida a (5) %
+    mostra
+    repeteix (50) vegades
+	    augmenta (2) la mida
+    end
+    amaga
 ```
   
 ## Proveu el projecte { .flag }
@@ -213,7 +203,7 @@ Premeu la bandera verda.
 
 + Per què no proveu de fer encara més úniques les explosions? Proveu-ho alterant la mida i velocitat de cada explosió.
 
-# Deseu el projecte { .save }
+## Deseu el projecte { .save }
 
 <!-- ///////////////////////////////////////////////////////////////////////////////// -->
 
@@ -224,18 +214,17 @@ Recordeu que abans hi havia un error quan manteníem el botó del ratolí clicat
 ## Llista de tasques { .check }
 
 + Per arreglar-ho, s'ha de substituir el bloc `envia a tots` { .blockbrown } amb un bloc `envia a tots i espera` { .blockbrown }. D'aquesta manera, el bloc no es repetirà fins que l'explosió hagi acabat.
-
 ```blocks
-	quan la BANDERA VERDA es premi
-	    amaga
-	    per sempre si ratolí clicat?
+quan la BANDERA VERDA es premi
+	amaga
+    per sempre 
+        si <ratolí clicat?> llavors
             vés a x: (ratolí x) y: (-200)
-	        toca el so [bang v]
-	        mostra
+            toca el so [bang v]
+            mostra
 	        llisca en (1) segons fins a x: (ratolí x) y: (ratolí y)
 	        amaga
 	        envia a tots [explota v] i espera
-	    (acaba per sempre)
 ```
 
 ## Proveu el projecte { .flag }
