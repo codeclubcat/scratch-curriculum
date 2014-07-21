@@ -26,6 +26,13 @@
             "pdf":      "03_Focs_Artificials/focs_artificials.pdf",
             "note":     "03_Focs_Artificials/Notes_per_als_caps_de_club.md",
             "note_pdf": "03_Focs_Artificials/Notes_per_als_caps_de_club.pdf"
+        },
+        {
+            "number":   4,
+            "filename": "04_Maquina_de_Fruita/Maquina_de_fruita.md",
+            "pdf":      "04_Maquina_de_Fruita/Maquina_de_fruita.pdf",
+            "note":     "04_Maquina_de_Fruita/Notes_per_als_caps_de_club.md",
+            "note_pdf": "04_Maquina_de_Fruita/Notes_per_als_caps_de_club.pdf"
         }
     ]
 }

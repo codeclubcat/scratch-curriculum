@@ -1,139 +1,285 @@
-Nivell 2
+---
+title: Màquina de Fruita
+level: Nivell 2
+stylesheet: scratch
+language: ca-ES
+embeds: "*.png"
+materials: "*.sb2"
+...
 
-#Màquina de fruita
-
-__Introduccció:__
+# Introduccció { .intro }
 
 Aquest és un joc semblant a les màquines escurabutxaques. Consisteix en anar canviant el vestit de tres personatges fins que els tres mostrin la mateixa imatge. 
 
-## PAS 1: Crear un personatge que canvii de vestit
+![screenshot](fruitmachine_screenshot.png)
 
-__Anem a importar imatges diferents per el nostre joc__
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
 
-1. Comenceu un projecte d'Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant __Esborra__
+# Pas 1: Crear un personatge que canviï de vestit { .activity }
 
-2. Importeu un nou personatge
+## Llista de tasques { .check }
 
-3. Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat __things/bananas1__, però podeu triar qualsevol imatge que us agradi.
+**Anem a importar imatges diferents per el nostre joc**
 
-4. Cliqueu la pestanya Vestits i importeu dues coses més. Ara ja teniu 3 personatges (nosaltres vam utilitzar __animals/bee1__ i __things/lego__, però podeu utilitzar el que us vingui més de gust).
++ Comenceu un projecte d'Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant **Esborra**
++ Primer de tot afegim un fons de la galeria per a l'escenari. Escolliu el fons **rays** de la categoria **Altres** i llavors esborreu el fons blanc original.
++ Importeu un nou personatge
++ Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat **things/bananas1**, però podeu triar qualsevol imatge que us agradi.
++ Cliqueu la '**i**' blava del personatge i canvieu-li el nom a 'Fruita'.
++ Cliqueu la pestanya Vestits i importeu dues coses més. Ara ja teniu 3 personatges (nosaltres vam utilitzar **animals/bee1** i **things/lego**, però podeu utilitzar el que us vingui més de gust).
 
-__Ara que tenim els vestits, volem que el personatge se'ls vagi canviant.__
+Ara que tenim els vestits, volem que el personatge se'ls vagi canviant.
 
-##PAS 2: Fer que les imatges vagin canviant
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
 
-1. Cliqueu la pestanya de __Programes__
+# Pas 2: Fer que les imatges vagin canviant { .activity }
 
-2. Seleccioneu Control i arrossegueu el bloc  __quan la bandera verda es premi__. El que poseu a continuació passarà cada vegada que el jugador premi la bandera verda.
+## Llista d'activitats { .check }
 
-3. Afegiu el bloc  __per sempre__ a continuació.
++ Cliqueu la pestanya de `Programes`.
++ Seleccioneu Control i arrossegueu el bloc  `quan la bandera verda es premi` { .blockyellow }. El que poseu a continuació passarà cada vegada que el jugador premi la bandera verda.
++ De la paleta **Control**, afegiu el bloc  `per sempre` { .blockyellow } de manera que s'enganxi a sota.
++ **Cliqueu la bandera verda** a dalt a la dreta. Fixeu-vos que ara apareix una petita ombra blanca al voltant del nostre programa. Això significa que  el nostre programa està corrent perquè hem clicat la bandera verda.
++ Ara cliqueu la paleta `Aspecte` i arrossegueu dins del bloc `següent vestit` { .blockpurple }
++ Com alentiríem el programa perquè no canvii de vestit tant ràpidament? Cliqueu a la paleta de  `Control` i arrossegueu el bloc `espera 1 segons` { .blockyellow }
++ Ajusteu el temps fins que el canvi a un pas més ràpid (normalment, un temps de 0.1s és suficient). Què passaria si no haguéssim posat el bloc `espera 1 segons` { .blockyellow }?
 
-4. Cliqueu la bandera verda a dalt a la dreta. Fixeu-vos que ara apareix una petita ombra blanca al voltant del nostre programa. Això significa que  el nostre programa està corrent perquè hem clicat la bandera verda.
-
-5. cliqueu la paleta __Aspecte__ i arrossegueu dins del bloc __següent vestit__
-
-6. Com alentiríem el programa perquè no canvii de vestit tant ràpidament? Cliqueu a la paleta de  __Control__ i arrossegueu el bloc __espera 1 segons__
-
-7. Ajusteu el temps fins que el canvi a un pas més ràpid (normalment, un temps de 0.1s és suficient). Què passaria si no haguéssim posat el bloc espera?
-
-```scratch
-
-	quan la bandera verda es premi
-	per sempre		
-		següent vestit
-		espera 0.1 segons
-	(acaba per sempre)
+```blocks
+   quan la BANDERA VERDA es premi
+   per sempre		
+      següent vestit
+      espera (0.1) segons
 ```
 
-###Proveu el projecte
+## Proveu el projecte { .flag }
 
-__Premeu la bandera verda.__
+**Premeu la bandera verda.**
+
 Els vestits canvien a una velocitat raonable? 
 
+## Deseu el projecte { .save }
 
-###Per saber-ne més
+## Per saber-ne més { .try }
 
-Ajusteu el temps en el bloc __espera__. Quin temps penseu que faria el joc més fàcil o més difícil?
++ Ajusteu el temps en el bloc `espera 0.1 secs` { .blockyellow }.
++ Quin temps penseu que faria el joc massa fàcil o massa difícil?
 
-##PAS 3: Fer que els personatges deixin de canviar de vestit al clicar-hi a sobre
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+
+# Pas 3: Fer que els personatges deixin de canviar de vestit al clicar-hi a sobre { .activity }
+
+## Llista d'activitats { .check }
 
 Perfecte! Ara farem que el personatge canvii el vestit per sempre, però com ho fem perquè parin de canviar de vestit quan hi cliquem a sobre?
 
-1. Creeu una nova variable clicant a la pestanya __Dades__. Anomeneu-la __"stopped"__" i feu que sigui visible per a tots tres personatges. Després deseleccioneu la casella perquè no es mostri sobre l'escenari.
++ Creeu una nova variable clicant a la paleta `Dades` i després al botó `Crea una Variable`. Anomeneu-la `parat` { .blockorange } i seleccioneu la opció "Només per aquest personatge", i també desmarqueu la caixeta al costat de la variable perquè no es vegi a l'escenari.
 
-2. Feu que __"stopped"__ tingui el valor de 1 quan algú cliqui sobre la imatge utilitzant el bloc __quan es cliqui aquest personatge__ i assigneu-li el valor 0 al començar a jugar, just després del bloc __quan la bandera verda es premi__.
++ Al principi del joc, el personatge no haurà estat clicat i per tant posarem el valor de la variable a **"NO"**.
+```blocks
+   quan la BANDERA VERDA es premi
+      assigna a [parat v] el valor [NO]
+      per sempre
+         següent vestit
+         espera (0.1) segons
+```   
 
-3. Ara volem que les imatges no canviin mentre la variable __"stopped"__ sigui igual a 1. Cliqueu a la paleta de __Control__ i canvieu el __per sempre__ pel bloc  __per sempre__ i a continuació __ si__. Llavors, utilitzeu el bloc de la paleta d'__operador__ __=__ per comprovar si la variable __"stopped"_" és igual a 0.
++ Ara posarem la variable `parat` { .blockorange } a **"SI"** quan algú clica el personatge.
+```blocks
+   quan es cliqui aquest personatge
+      assigna a [parat v] el valor [SI]
+```    
 
-###Proveu el projecte
++ Finalment, hem d'aturar els canvis de vestit quan la variable `parat` { .blockorange } tingui el valor "SI". Afegiu un bloc `si...llavors` { .blockyellow } i un bloc de **comparació** `[] = []` { .blockgreen } (a la paleta dels *Operadors*) per mirar si `parat` { .blockorange } està a "NO".
+```blocks
+   quan la BANDERA VERDA es premi
+   assigna a [parat v] el valor [NO]
+   per sempre
+      si <(parat) = [NO]> llavors
+         següent vestit
+         espera (0.1) segons
+```
 
-__Premeu bandera verda, espereu un moment i després cliqueu un personatge__
+## Proveu el projecte { .flag }
 
-Els personatges, canvien de vestit mentre no hi cliqueu a sobre??
-Paren quan hi heu clicat a sobre?
+Premeu bandera verda, espereu un moment i després cliqueu un personatge.
 
-__Reinicieu el personatge.__ El personatge es para quan hi poseu el ratolí a sobre sense clicar-lo? Quan cliqueu en qualsevol altre posició sobre l'escenari, es para? I si cliqueu sobre algun altre lloc sobre la finestra d'Scratch? I fora de la finestra d'Scratch?
++ Canvia el vestit abans de clicar-lo?
++ S'atura quan el cliqueu?
++ **Engegueu el programa un altre cop**. S'atura quan poseu el ratolí a sobre, però sense clicar?
++ S'atura si cliqueu a qualsevol lloc de l'escenari?
++ I si cliqueu sobre algun altre lloc sobre la finestra d'Scratch? 
++ I fora de la finestra d'Scratch?
+
+## Deseu el projecte { .save } 
+
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+
+# Pas 4: Crear els altres personatges { .activity }
+
+Ara necessitem crear els altres personatges per tal de poder jugar al nostre joc!
+
++ **Dupliqueu el personatge** (Fruita) clicant-hi a sobre amb el botó dret.
++ Dupliqueu-lo una altra vegada. Ara heu de tenir 3 personatges sobre l'escenari.
++ Moveu cada personatge per tal que estiguin en línia. Feu-los una mica més petits si ho necessiteu.
+
+## Proveu el projecte { .flag }
+
+Premeu bandera verda. Totes les animacions haurien de canviar. Proveu de parar-les totes de cop!
+
+## Deseu el projecte { .save }
+
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+
+# Pas 5: Posar un vestit a l'atzar a cada personatge { .activity }
+
+Anem a fer que quan es premi la bandera verda, cada personatge comenci amb un vestit a l'atzar.
+
+Quan engegueu el joc just després de carregar-lo, tots els personatges mostren el mateix vestit i canvien plegats. Seria més interessant (i difícil) si canviéssin de forma menys predictible.
+
+## Llista d'activitats { .check }
+
++ Si mireu la pestanya `Vestits` per a un personatge veureu que els vestits estan numerats.
++ Per fer que un personatge comenci amb un cert vestit, anem a afegir un bloc `canvia el vestit a ...` { .blockpurple } amb un `nombre a l'atzar entre (1) i (3)` { .blockgreen } (de la paleta **Operadors** verda), per escollir el número del vestit.
++ També podem fer servir aquest bloc en el `per sempre` { .blockyellow } i així el personatge canviï sempre a un vestit diferent cada vegada.
+```blocks
+   quan la BANDERA VERDA es premi
+      assigna a [parat v] el valor [NO]
+      canvia el vestit a <nombre a l'atzar entre (1) i (3)>
+      per sempre
+         si <(parat) = [NO]> llavors
+            canvia el vestit a <nombre a l'atzar entre (1) i (3)>
+            espera (0.1) segons
+```
+
++ Fes el mateix per a tots els personatges.
+
+## Proveu el projecte { .flag }
+
+Clica la bandera verda. Tots els personatges haurien de canviar de vestit de forma impredictible.
+
++ Com s'hauria de canviar el programa si afegim un altre vestit?
+
+## Deseu el projecte { .save }
+
+## Per saber-ne més { .try }
+
+**Fer el joc més difícil**
+
+Canvieu la dificultat del joc una mica. Una cosa fàcil és canviar la rapidesa amb la que canvien els vestits. Però podem pensar alguna cosa més imaginativa?
+
+Algunes idees:
+
++ Canvieu el número de vestits que té cada personatge.
++ Feu que alguns personatges tinguin vestits únics.
++ Que els temps entre els canvis de vestit siguin diferents.
+
+Divertiu-vos pensant coses pel vostre compte! Cada cop que feu un canvi, penseu si fa el joc més fàcil o més difícil. És el joc massa difícil o massa fàcil? Com podeu ajustar la dificultat de forma que sigui la justa?
 
 
-##Step 4: Crear els altres personatges 
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
 
-__Ara necessitem crear els altres personatges per tal de poder jugar al nostre joc!__
+# Pas 6: Mostrar un missatge quan el joc s'ha acabat. { .activity }
 
-1. Dupliqueu el personatge (Sprite1) clicant-hi a sobre amb el botó dret.
+Anem a mostrar el missatge "Game Over" quan el joc s'hagi acabat.
 
-2. Dupliqueu-lo una altra vegada. Ara heu de tenir 3 personatges sobre l'escenari.
+## Llista d'activitats { .check }
 
-3. Moveu cada personatge per tal que estiguin en línia. Feu-los una mica més petits si ho necessiteu.
+Primer, anem a crear un fons diferent per mostrar quan el joc s'hagi acabat.
 
++ Cliqueu a l'escenari i després a la pestanya `Fons`. Canvieu el nom del fons actual per **"Jugant"**.
++ Dupliqueu el fons i afegiu un text a la còpia que posi **"Game Over"**. Podeu canviar el tamany del text clicant-lo i arrossegant alguna de les cantonades. Poseu el nom **"Game Over"** a aquest fons.
++ Cliqueu a la pestanya `Programes` per a l'escenari i feu que el fons "Jugant" sigui el que s'utilitza quan el joc comença.
++ Com podem detectar quan tots els personatges s'han parat? Recordeu que hem utilitzat la variable `parat` { .blockorange } per saber si un personatge ha estat clicat? Anem a mirar la variable `parat` { .blockorange } per al personatge **Fruit3** per veure si el joc s'ha acabat. Seleccioneu el personatge Fruit3 i busqueu el bloc `[posicio x] de [Fruit3]` { .blockblue } de la paleta `Sensing` {
+.blocklightgrey }, però canviant **posició x** a `parat` { .blockorange }.
+```blocks
+   quan la BANDERA VERDA es premi
+      canvia el fons a [Jugant v]
+      per sempre
+         si <([parat v] de [Fruita3]) = [SI]> llavors
+            canvia el fons a [Game Over v]
+```
 
-###Proveu el projecte
-__Premeu bandera verda.__ Totes les animacions haurien de canviar. Proveu de parar-les totes de cop!
+## Proveu el projecte { .flag }
 
+Cliqueu la bandera verda. Apareix el missatge "Game Over" quan cliqueu el tercer personatge?
 
-###Per saber-ne més
+Què succeeix si pareu la Fruita3 abans d'haver parat els dos altres personatges? Anem a modificar el programa per tal que funcioni independentment de l'ordre en què es cliquin els personatges.
 
-Quan engegueu el joc just després de carregar-lo, tots els personatges mostren el mateix vestit i canvien a l'uníson. Com ho faríeu per tal que els personatges canviessin de vestit aleatòriament quan premeu bandera verda? Pista: proveu d'agafar un vestit a l'atzar per a cada personatge un cop hagi començat el joc.
++ Per mirar que **tots tres** personatges tenen la variable `parat` { .blockorange } amb el valor **SI**, podem fer servir el bloc `<> i <>` { .blockgreen }. Aquest és un bloc que pot ser difícil de muntar, intenteu fer-ho per passos i amb molta cura.
+```blocks
+   quan la BANDERA VERDA es premi
+      canvia el fons a [Jugant v]
+      per sempre
+         si <<<([parat v] de [Fruita1 v]) = [SI]> i <([parat v] de [Fruita2 v]) = [SI]>> i <([parat v] de [Fruita1 v]) = [SI]>> llavors
+            canvia el fons a [Game Over v]
+```
 
-__Molt bé per aquells que han finalitzat el joc bàsic. Tota manera, hi ha més coses que es poden afegir al joc. Proveu els reptes següents!__
+## Proveu el projecte { .flag }
 
+Cliqueu la bandera verda. Apareix el missatge "Game Over" només quan s'han parat els tres personatges, sense dependre de l'ordre en que s'han clicat?
 
-##Repte 1: Fer el joc més difícil
+## Deseu el projecte { .save }
 
-Penseu en una manera de fer el joc més difícil. Per exemple, fent que els vestits canviin més depressa. Intenteu després coses més imaginatives:
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
 
-1. Canviar el nombre de vestits que té cada personatge..
+# Pas 7: Dir-li al jugador si ha guanyat o perdut { .activity }
 
-2. Fer que alguns personatges tinguin vestits únics.
+L'objectiu del joc és clicar als personatges i parar-los tots quan tenen el mateix vestit. Estaria molt bé també mostrar un missatge per dir si has guanyat o perdut.
 
-3. Introduir diferents temps entre els canvis de vestit.
+## Llista d'activitats { .check }
 
-4. Fer que cada personatge canvii a un vestit aleatori enlloc del vestit següent.
++ Hem fet el programa que mira si el joc s'ha acabat en el **Pas 6**, ara només caldria mirar també si el jugador ha guanyat. Aneu als fons d'escenari un altre cop i afegiu el text **"Has guanyat!"**. Canvieu el nom del fons a **"Guanyar"**.
++ Copieu el fons de nou i canvieu el text per **"Has perdut..."**. Canvia el nom del fons a **"Perdre"**.
++ Ara necessitem alguns blocs més per decidir quin fons hem de posar quan s'acaba el joc. Podem fer servir un bloc ``si..llavors..sino` { .blockyellow } per veure si el jugador ha guanyat o ha perdut comparant cada `[vestit nr] de [Fruita3]` { .blocklightblue } (a la paleta de `Sensors` { .blocklightblue }) d'un personatge amb el dels altres.
+```blocks
+   quan la BANDERA VERDA es premi
+      canvia el fons a [Jugant v]
+      per sempre
+         si <<<([parat v] de [Fruit1 v]) = [YES]> i <([parat v]  of [Fruit2 v]) = [YES]>> and <([stopped v]  of [Fruit3 v]) = [YES]>> llavors
+            si <<([vestit nr v] de [Fruit1 v]) = ([vestit nr v]  of [Fruit2 v])> and <([vestit nr v]  of [Fruit2 v]) = ([vestit nr v]  of [Fruit3 v])>> llavors
+               canvia el fons a [Guanyar v]
+            si no
+               canvia el fons a [Perdre v]
+```
 
+## Proveu el projecte { .flag }
 
-__Divertiu-vos amb tots aquests canvis!__
+Cliqueu la bandera verda. Apareix el missatge correcte quan el joc s'acaba? Què passarà si els números dels vestits dels personatges no es corresponen (per exemple, el vestit 3 de Fruita2 és una poma i el vestit 3 de Fruita3 és un meló)?
 
-Cada cop que feu un canvi, penseu si fa el joc més difícil o més senzill. Com es pot ajustar la dificultat del joc per tal que sigui la justa?
+## Deseu el projecte { .save }
 
+## Repte: Fer que el joc ajusti la dificultat automàticament { .challenge }
 
-##Repte 2: Fer que el joc sigui més difícil i senzill amb el temps
+A l'hora de jugar, us trobareu amb persones de diferents habilitats. **Com ajustareu la dificultat del joc depenent del jugador?**
 
-A l'hora de jugar, us trobareu amb persones de diferents habilitats. __Com ajustareu la dificultat del joc depenent del jugador?__
+Una manera de fer-ho és **ajustar la velocitat de canvi dels vestits**. Podeu utilitzar una variable, que s'anomeni `retard` { .blockorange }, que ens doni la durada de cada bloc `espera` { .blockorange } per a cada personatge. Si el jugador guanya la partida, la variable `retard` { .blockorange } es pot escurçar una mica (per fer el joc més difícil). Si el jugador perd la partida, la variable
+`retard` { .blockorange } es pot augmentar una mica (per fer el joc més fàcil).
 
-Una manera de fer-ho és __ajustar la velocitat de canvi dels vestits__. Podeu utilitzar una variable, que s'anomeni *retard*, que ens doni la durada de cada bloc __espera__ per a cada personatge. Si el jugador guanya la partida, la variable __"retard"__ es pot escurçar una mica (per fer el joc més difícil). Si el jugador perd la partida, la variable __"retard"__ es pot augmentar una mica (per fer el joc més fàcil).
+Probablement també haureu de pensar en fer servir un manera diferent de començar el joc (que no sigui `quan la bandera verda es premi` { .blockyellow }, perquè així es podran guardar valors que es podran recordar entre diferents partides.
 
+## Deseu el projecte { .save }
 
-##￼Repte 3: Detectar que els 3 personatges s'han aturat amb el mateix vestit
-__La finalitat del joc és clicar sobre els personatges en el moment que aquestes mostren el mateix vestit. Estaria bé que l'escenari detectés l'estatus del joc quan es paren els personatges i que et digués si heu guanyat o perdut tot comprovant si els 3 personatges porten el mateix vestit.__
+Ara que heu acabat, ja podeu disfrutar del vostre joc!
 
-Primer de tot, l'escenari ha de saber quan acaba el jugador. Podem fer això fent que l'escenari comprovi si els 3 personatges han parat de moure's quan hi cliquem a sobre. Modifiqueu per a cada personatge el bloc __quan es cliqui sobre aquest personatge__ per enviar a tots un nou missatge, "checkforEnd".
-
-L'escenari pot respondre a aquest missatge i comprovar si el joc s'ha acabat mirant que les 3 variables __"stopped"__ dels 3 personatges valen 1. Per fer-ho, utilitzem el bloc __posició x del personatge__ per a cada personatge i canviem __"posició x"__ per la variable __"stopped"__. Si tots 3 personatges tenen el valor de __"stopped"__ a 1, sabem que el joc s'ha acabat i podem comprovar si el jugador ha guanyat o no.
-
-Per fer-ho, podem utilitzar el mateix bloc __posició x del personatge__ però enlloc de comprovar la variable __"stopped"__, podem comprovar el número de vestit i veure si el personatge Sprite1 té el mateix vestit que Sprite2, i si el personatge Sprite2 té el mateix vestit que Sprite3.
-
-Necessitareu doncs un bloc __si__ per comprovar cada variable __"stopped"__ i dins d'aquest bloc un altre bloc __si...si no__ per comprovar si el jugador ha guanyat o no comparant cada vestit de cada personatge.
-
-Arribats a aquest punt, podeu anunciar el resultat del joc utilitzant un bloc __digues__ i fer-ho utilitzant una altre personatge. Podeu utilitzar el gat Fèlix perquè digui al jugador si ha guanyat o ha perdut. 
-
-__Ara que heu acabat, ja podeu disfrutar del vostre joc!__
 No us oblideu de compartir-lo amb la vostra família i amics!
