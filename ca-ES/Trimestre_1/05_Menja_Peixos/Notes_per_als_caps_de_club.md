@@ -1,12 +1,14 @@
+---
+title: Menja Peixos - Notes per als caps de club
+language: ca-ES
+embeds: "*.png"
+...
 
-# NOTES PER ALS CAPS DE CLUB
-##(Menja-Peixos)
-
-###Introducció
+# Introducció
 Construirem un joc Menja-peixos! Ajudeu al Peix Gros a menjar-se totes les preses que neden al seu voltant.
 
-### Competències
-Aquest projecte cobreix:
+# Competències
+Aquest projecte tracta els conceptes:
 
 * Moure objectes
 * Controlar objectes amb el ratolí. 
@@ -16,24 +18,21 @@ Aquest projecte cobreix:
 * Manteniment i canvi de marcadors
 
 
-###Recursos
+# Recursos
 Aquest projecte utilitza recursos inclosos les carpetes 'Backgrounds' i 'Costumes' de l'Scratch. Els vestits pel Peix Gros es poden trobar als packs per a Voluntaris. 
 
-##Targes Scratch necessàries
+# Targes Scratch necessàries
 * Animeu-lo
 * Guardeu els punts
 * Cronòmetre
 * Seguiu el ratolí
 
-###Exercicis bàsics
-Pas 1: El Peix Gros segueix el punter del ratolí
+# Exercicis bàsics
+* Pas 1: El Peix Gros segueix el punter del ratolí
+* Pas 2: Afegiu algunes preses
+* Pas 3: El Peix Gros es menja la presa
 
-Pas 2: Afegiu algunes preses
-
-Pas 3: El Peix Gros es menja la presa
-
-### Desafiaments
-
+# Desafiaments
 1. Feu que la presa es mogui de forma diferent
 2. Feu que la presa eviti el Peix Gros
 3. Afegiu un marcador
