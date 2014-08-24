@@ -22,7 +22,7 @@ Aquest projecte s´inspira en el joc de fira d´origen anglès anomenat  __Whack
 + Afegiu una variable només per aquesta animació que es digui velocitat { .blockorange }. 
 + A l´escenari,  el monitor d’aquesta variable ha de dir  “Personatge1 velocitat”. Si només diu “velocitat”,  elimineu la variable i torneu-la a crear, però només per aquesta animació. Desmarqueu la casella de la variable a la paleta de variables perquè no es vegi a l’escenari. La variable velocitat controlarà la velocitat de la bruixa. Fem servir una variable, perquè així més endavant podrem canviar la velocitat.
 + El primer que volem és  que la bruixa es comenci a moure en començar el joc. Per fer-ho escriviu aquest script:
-```blocks
+```scratch
 	quan la BANDERA VERDA es premi
        assigna a [velocitat v] el valor [5]
        per sempre
@@ -42,7 +42,7 @@ Com és que s'encalla a la vora de la pantalla?
 + Per tal de que la bruixa no s'encalli, feu que giri cua en tocar la vora de la pantalla. Sota el bloc __"mou-te velocitat passos"__ afegiu-hi el bloc  __"rebota en tocar una vora"__.
 
 + A més a més, per tal que la bruixa no es giri de caps per avall, utilitzeu el bloc __"fixa la rotació a" on seleccionarem esquerra-dreta.
-```blocks
+```scratch
 	quan la BANDERA VERDA es premi
 	   fixa la rotació a [esquerra-dreta v]
        assigna a [velocitat v] el valor [5]
@@ -73,7 +73,7 @@ Per fer el joc més interessant, farem que la bruixa aparegui i desaparegui en q
 ## Llista de tasques { .check }
 
 + Creeu aquest script per la bruixa:
-```blocks
+```scratch
     quan la BANDERA VERDA es premi
     per sempre
        amaga
@@ -105,7 +105,7 @@ Per fer que això sigui un joc, hem de donar als jugadors alguna cosa a fer. Hau
 + A la pestanya __Sons__,  importeu el so  __electronic/fairydust__.
 
 + Afegiu aquest script a la bruixa:
-```blocks
+```scratch
 	quan es cliqui aquest personatge
 	  amaga
 	  toca el so [Fairydust v]
@@ -124,7 +124,7 @@ Feu clic a la bandera verda.
 Tot i que ja tenim llesta la  bruixa, el nostre objectiu és crear un joc! Afegirem un marcador que ens servirà per anar anotant els punts cada cop que cliquem a sobre de la bruixa abans no s'acabi un temps. Per tant, necessitarem una variable per al temps i una altra per al marcador.
 
 + Creeu una nova variable __per tots els personatges__ que es digui **marcador** i retoqueu l'script perquè s'incrementi en un punt el marcador cada cop que s'atrapa la bruixa.
-```blocks
+```scratch
 	quan es cliqui aquest personatge
        amaga
        toca el so [Fairydust v]
@@ -133,7 +133,7 @@ Tot i que ja tenim llesta la  bruixa, el nostre objectiu és crear un joc! Afegi
 
 + Aneu a l'**escenari** i creeu una nova variable (aquesta __només per l'escenari__) que es digui __temps__. 
 + Afegiu un script que posi `temps` { .blockorange } a 30 i el marcador a 0 al prémer la bandera verda. Feu servir un bloc __repeteix fins que__ per esperar un segon i reduir el temps un segon. Això s'hauria de repetir fins que `temps` { .blockorange } arribi a 0. En arribar a zero, cridarem `atura tot` { .blockyellow } per aturar el joc.
-```blocks
+```scratch
 	quan la BANDERA VERDA es premi
        assigna a [temps v] el valor (30)
        assigna a [marcador v] el valor (0)

@@ -49,8 +49,7 @@ Ara que tenim els vestits, volem que el personatge se'ls vagi canviant.
 + Ara cliqueu la paleta `Aspecte` i arrossegueu dins del bloc `següent vestit` { .blockpurple }
 + Com alentiríem el programa perquè no canvii de vestit tant ràpidament? Cliqueu a la paleta de  `Control` i arrossegueu el bloc `espera 1 segons` { .blockyellow }
 + Ajusteu el temps fins que el canvi a un pas més ràpid (normalment, un temps de 0.1s és suficient). Què passaria si no haguéssim posat el bloc `espera 1 segons` { .blockyellow }?
-
-```blocks
+```scratch
    quan la BANDERA VERDA es premi
    per sempre		
       següent vestit
@@ -84,7 +83,7 @@ Perfecte! Ara farem que el personatge canvii el vestit per sempre, però com ho 
 + Creeu una nova variable clicant a la paleta `Dades` i després al botó `Crea una Variable`. Anomeneu-la `parat` { .blockorange } i seleccioneu la opció "Només per aquest personatge", i també desmarqueu la caixeta al costat de la variable perquè no es vegi a l'escenari.
 
 + Al principi del joc, el personatge no haurà estat clicat i per tant posarem el valor de la variable a **"NO"**.
-```blocks
+```scratch
    quan la BANDERA VERDA es premi
       assigna a [parat v] el valor [NO]
       per sempre
@@ -93,13 +92,13 @@ Perfecte! Ara farem que el personatge canvii el vestit per sempre, però com ho 
 ```   
 
 + Ara posarem la variable `parat` { .blockorange } a **"SI"** quan algú clica el personatge.
-```blocks
+```scratch
    quan es cliqui aquest personatge
       assigna a [parat v] el valor [SI]
 ```    
 
 + Finalment, hem d'aturar els canvis de vestit quan la variable `parat` { .blockorange } tingui el valor "SI". Afegiu un bloc `si...llavors` { .blockyellow } i un bloc de **comparació** `[] = []` { .blockgreen } (a la paleta dels *Operadors*) per mirar si `parat` { .blockorange } està a "NO".
-```blocks
+```scratch
    quan la BANDERA VERDA es premi
    assigna a [parat v] el valor [NO]
    per sempre
@@ -156,7 +155,7 @@ Quan engegueu el joc just després de carregar-lo, tots els personatges mostren 
 + Si mireu la pestanya `Vestits` per a un personatge veureu que els vestits estan numerats.
 + Per fer que un personatge comenci amb un cert vestit, anem a afegir un bloc `canvia el vestit a ...` { .blockpurple } amb un `nombre a l'atzar entre (1) i (3)` { .blockgreen } (de la paleta **Operadors** verda), per escollir el número del vestit.
 + També podem fer servir aquest bloc en el `per sempre` { .blockyellow } i així el personatge canviï sempre a un vestit diferent cada vegada.
-```blocks
+```scratch
    quan la BANDERA VERDA es premi
       assigna a [parat v] el valor [NO]
       canvia el vestit a <nombre a l'atzar entre (1) i (3)>
@@ -209,7 +208,7 @@ Primer, anem a crear un fons diferent per mostrar quan el joc s'hagi acabat.
 + Cliqueu a la pestanya `Programes` per a l'escenari i feu que el fons "Jugant" sigui el que s'utilitza quan el joc comença.
 + Com podem detectar quan tots els personatges s'han parat? Recordeu que hem utilitzat la variable `parat` { .blockorange } per saber si un personatge ha estat clicat? Anem a mirar la variable `parat` { .blockorange } per al personatge **Fruit3** per veure si el joc s'ha acabat. Seleccioneu el personatge Fruit3 i busqueu el bloc `[posicio x] de [Fruit3]` { .blockblue } de la paleta `Sensing` {
 .blocklightgrey }, però canviant **posició x** a `parat` { .blockorange }.
-```blocks
+```scratch
    quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
@@ -224,7 +223,7 @@ Cliqueu la bandera verda. Apareix el missatge "Game Over" quan cliqueu el tercer
 Què succeeix si pareu la Fruita3 abans d'haver parat els dos altres personatges? Anem a modificar el programa per tal que funcioni independentment de l'ordre en què es cliquin els personatges.
 
 + Per mirar que **tots tres** personatges tenen la variable `parat` { .blockorange } amb el valor **SI**, podem fer servir el bloc `<> i <>` { .blockgreen }. Aquest és un bloc que pot ser difícil de muntar, intenteu fer-ho per passos i amb molta cura.
-```blocks
+```scratch
    quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
@@ -252,7 +251,7 @@ L'objectiu del joc és clicar als personatges i parar-los tots quan tenen el mat
 + Hem fet el programa que mira si el joc s'ha acabat en el **Pas 6**, ara només caldria mirar també si el jugador ha guanyat. Aneu als fons d'escenari un altre cop i afegiu el text **"Has guanyat!"**. Canvieu el nom del fons a **"Guanyar"**.
 + Copieu el fons de nou i canvieu el text per **"Has perdut..."**. Canvia el nom del fons a **"Perdre"**.
 + Ara necessitem alguns blocs més per decidir quin fons hem de posar quan s'acaba el joc. Podem fer servir un bloc ``si..llavors..sino` { .blockyellow } per veure si el jugador ha guanyat o ha perdut comparant cada `[vestit nr] de [Fruita3]` { .blocklightblue } (a la paleta de `Sensors` { .blocklightblue }) d'un personatge amb el dels altres.
-```blocks
+```scratch
    quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre

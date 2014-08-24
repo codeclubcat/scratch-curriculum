@@ -22,14 +22,14 @@ Construirem un joc on __el gat Fèlix__ i el ratolí __Herbert__ juguen a atrapa
 + Canvieu el nom del personatge per Fèlix.
 + Assegureu-vos que en Fèlix només miri a esquerra utilitzant el bloc __"fixa la rotació a__
 + Creeu aquest programa:
-```blocks
+```scratch
 	Quan la BANDERA VERDA es premi
 	fixa la rotació a [esquerra-dreta v]
 	per sempre
 		apunta cap a [punter del ratolí v]
 		mou-te (10) passos
 		següent vestit
-		toca la nota (62 v) durant (0.3) pulsacions
+		toca el so (62 v) durant (0.3) pulsacions
     end
 ```
 		
@@ -55,7 +55,7 @@ A continuació volem que en Fèlix persegueixi en Herbert, enlloc del punter del
 + Editeu el vestit i feu-l'ho més petit que el de'n Fèlix. Cal fer clic al vestit i arrossegar un dels extrems de la caixa que apareix.
 + Assegureu-vos que en Herbert només miri a esquerra i dreta utilitzant el bloc __"fixa la roació a"__.
 + Doneu-li aquest programa a en Herbert:
-```blocks
+```scratch
     Quan la BANDERA VERDA es premi
 	fixa la rotació a [esquerra-dreta v]
 	per sempre
@@ -78,7 +78,7 @@ Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.
 ## Llista de tasques { .check }
 
 + Modifiqueu el programa d'en Felix així:
-```blocks
+```scratch
 	Quan la BANDERA VERDA es premi
 	fixa la rotació a [esquerra-dreta v]
 	per sempre
@@ -108,7 +108,7 @@ En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en u
 ## Llista de tasques { .check }
 
 + Canvieu el programa d'en Fèlix per tal d'enviar aquest missatge quan atrapi en Herbert.
-```blocks
+```scratch
 	Quan la BANDERA VERDA es premi
 	per sempre
 		apunta cap a [punter del ratolí v]
@@ -128,7 +128,7 @@ En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en u
 + Editeu-l'ho per fer-lo més petit. N'hi hauria d'haver prou amb sis clics al botó __encongir__.
 + Canvieu els noms dels vestits d'en Herbert de manera que vestit de ratolí s'anomeni __'viu'__ i el de fantasma __'fantasma__'.
 + Creeu un nou programa per tal de convertir en Herbert en un fantasma:
-```blocks
+```scratch
     quan rebi [atrapat v]
        canvia el vestit a [fantasma v]
        espera (1) segons
@@ -156,7 +156,7 @@ Afegirem un marcador de manera que sabrem com de bé mantenim al Herbert en vida
 + Cliqueu l'apartat `Dades` { .blockorange }, i creeu una variable de nom `puntuació` { .blockorange }, fixant-vos en seleccionar la opció "per a tots els personatges". 
 
 + Creeu aquests dos programes a l'escenari:
-```blocks
+```scratch
     Quan la BANDERA VERDA es premi
        assigna a [puntuació v] el valor [0]
        per sempre
