@@ -4,7 +4,7 @@ level: Nivell 1
 language: ca-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.sb2","Resources/*.wav", "Resources/*.png"]
+materials: ["*.sb2", "recursos/*.wav", "recursos/*.png"]
 ...
 
 # Introducció { .intro }
@@ -15,7 +15,8 @@ En aquest projecte, llençarem focs artificials al cel d'una ciutat.
 
 # Pas 1: Crear un coet que vola apuntant el ratolí { .activity }
 
-Importem les imatges necessàries per el nostre joc
+Importem les imatges necessàries per al nostre joc (per fer aquest pas
+cal descarregar primer el fitxer **.zip** de recursos associats a aquest projecte).
 
 ## Llista de tasques { .check }
 
@@ -93,7 +94,7 @@ Premeu la bandera verda, i després cliqueu el ratolí sobre l'escenari. Torneu 
 
 ## Llista d'activitats { .check }
 
-+ El primer que us cal per fer explotar el coet és fer que soni una explosió just abans que comenci a moure's. El so el podeu trobar a la carpeta **Recursos/bang.wav**.  Llavors es tracta que s'amagui un cop arribi on és el ratolí. Per importar un so aneu a la **pestanya Sons** i cliqueu el botó `Puja so des d'un fitxer`.
++ El primer que us cal per fer explotar el coet és fer que soni una explosió just abans que comenci a moure's. El so el podeu trobar a la carpeta **recursos/bang.wav**.  Llavors es tracta que s'amagui un cop arribi on és el ratolí. Per importar un so aneu a la **pestanya Sons** i cliqueu el botó `Puja so des d'un fitxer`.
 ```scratch
 quan la BANDERA VERDA es premi
     amaga
@@ -127,7 +128,7 @@ Premeu la bandera verda. Assegureu-vos que el coet toca un so i s'amaga quan arr
 
 ## Llista de tasques { .check }
 
-+ Importeu un nou personatge des del fitxer **Recursos/focartificial1.png**
++ Importeu un nou personatge des del fitxer **recursos/focartificial1.png**
 
 + Quan rebi el missatge "explota", s'ha d'amagar i moure's a la posició del coet fent servir la instrucció `vés a` { .blockblue }, després s'ha de mostrar i finalment s'ha d'amagar una altra vegada al cap d'un segon.
 ```scratch
@@ -169,7 +170,7 @@ Premeu la bandera verda. Cada explosió té un color diferent?
 
 ## Llista de tasques { .check }
 
-+ Afegim ara diferents vestits per l'explosió amb les imatges de **Recursos/focartificial2.png** i **Recursos/focartificial3.png**. Intercanvia'ls per a cada coet abans de mostrar-los.
++ Afegim ara diferents vestits per l'explosió amb les imatges de **recursos/focartificial2.png** i **recursos/focartificial3.png**. Intercanvia'ls per a cada coet abans de mostrar-los.
 
 ## Proveu el projecte { .flag }
 

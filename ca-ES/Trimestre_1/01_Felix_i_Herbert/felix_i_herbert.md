@@ -15,6 +15,8 @@ Construirem un joc on __el gat Fèlix__ i el ratolí __Herbert__ juguen a atrapa
 
 # Pas 1: En Fèlix segueix el punter del ratolí { .activity }
 
+[![Vídeo del Pas 1 de Fèlix i Herbert](1.png)](http://www.youtube.com/watch?v=N0ipNfQ6Tv4)
+
 ## Llista de tasques { .check } 
 
 + Creeu un nou projecte.
@@ -46,6 +48,8 @@ Feu clic a la bandera verda.
 
 # Pas 2: En Fèlix persegueix en Herbert { .activity }
 
+[![Vídeo del Pas 1 de Fèlix i Herbert](2.png)](http://www.youtube.com/watch?v=0kuE1m0CdbU)
+
 A continuació volem que en Fèlix persegueixi en Herbert, enlloc del punter del ratolí.
 
 ## Llista de tasques { .check }
@@ -72,6 +76,8 @@ Feu clic a la bandera verda.
 + En Fèlix persegueix al Herbert?
 
 # Pas 3: En Fèlix diu quan ha atrapat en Herbert  { .activity }
+
+[![Vídeo del Pas 3 de Fèlix i Herbert](3.png)](http://www.youtube.com/watch?v=dQemiwXhDvw)
 
 Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.
 
@@ -102,6 +108,8 @@ Feu clic a la bandera verda.
 
 
 # Pas 4: En Herbert es converteix en un fantasma quan l'atrapen { .activity }
+
+[![Vídeo del Pas 4 de Fèlix i Herbert](4.png)](http://www.youtube.com/watch?v=p_jSehpLURg)
 
 En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en un fantasma quan l'atrapin.
 
@@ -149,6 +157,8 @@ Feu clic a la bandera verda.
 
 # Pas 5: Actualitzar el marcador
 
+[![Vídeo del Pas 5 de Fèlix i Herbert](5.png)](http://www.youtube.com/watch?v=_HvJGQuyePE)
+
 Afegirem un marcador de manera que sabrem com de bé mantenim al Herbert en vida. Començarem amb el marcador a zero i l'incrementarem una unitat cada segon. Si en Fèlix atrapa en Herbert, reduirem el marcador en cent unitats.
 
 ## Llista de tasques { .check }
@@ -182,3 +192,6 @@ Feu click a la bandera verda.
 Molt bé, heu acabat! Ara ja podeu gaudir del joc!
 
 No us oblideu que podeu compartir el joc amb amics i familiars fent clic a **Comparteix** al menú!
+
+[![Vídeo de com compartir el projecte Fèlix i Herbert](6.png)](http://www.youtube.com/watch?v=CevjMU5-ZFc)
+

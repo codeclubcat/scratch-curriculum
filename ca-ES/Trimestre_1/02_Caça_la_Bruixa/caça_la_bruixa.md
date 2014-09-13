@@ -1,6 +1,6 @@
 ---
 title: Caça la bruixa
-level: Level 1
+level: Nivell 1
 language: ca-ES
 stylesheet: scratch
 embeds: "*.png"
@@ -13,6 +13,8 @@ Aquest projecte s´inspira en el joc de fira d´origen anglès anomenat  __Whack
 ![screenshot](caçalabruixa_screenshot.png)
 
 # Pas 1: Crear una bruixa que voli { .activity }
+
+[![Vídeo del Pas 1 de Caça la Bruixa](1.png)](http://www.youtube.com/watch?v=eIPimTAu1tU)
 
 ## Llista de tasques { .check }
 
@@ -68,6 +70,8 @@ Feu clic a la bandera verda.
 
 # Pas 2: Fer desaparèixer la bruixa en qualsevol moment { .activity }
 
+[![Vídeo del Pas 2 de Caça la Bruixa](2.png)](http://www.youtube.com/watch?v=8MELwGG2deg)
+
 Per fer el joc més interessant, farem que la bruixa aparegui i desaparegui en qualsevol moment. Crearem un altre script que corri al mateix temps que es mou la bruixa. El nou script amagarà la bruixa durant un temps qualsevol, llavors la mostrarà durant un altre interval de temps, i ho anirà repetint per sempre (o fins que s'acabi el joc). 
 
 ## Llista de tasques { .check }
@@ -97,6 +101,8 @@ Feu clic a la bandera verda.
 + Proveu de canviar el rang dels nombres a l'atzar. Què passa si agafeu números molt grans? i molt petits? (Potser això us dóna alguna pista de com fer que la bruixa voli més ràpid a mesura que passa el temps …)
 
 # Pas 3: Fer que la bruixa desaparegui al clicar-la { .activity }
+
+[![Vídeo del Pas 3 de Caça la Bruixa](3.png)](http://www.youtube.com/watch?v=xmNAlvXwYL0)
  
 Per fer que això sigui un joc, hem de donar als jugadors alguna cosa a fer. Hauran de clicar damunt la bruixa per fer-la desaparèixer. Quan li facin clic a sobre, volem que desaparegui i que s'escolti un so.
 
@@ -120,6 +126,8 @@ Feu clic a la bandera verda.
 ## Deseu el projecte { .save }
 
 # Pas 4: Afegir un marcador i un cronòmetre { .activity }
+
+[![Vídeo del Pas 4 de Caça la Bruixa](4.png)](http://www.youtube.com/watch?v=wC_SnFdUoYQ)
 
 Tot i que ja tenim llesta la  bruixa, el nostre objectiu és crear un joc! Afegirem un marcador que ens servirà per anar anotant els punts cada cop que cliquem a sobre de la bruixa abans no s'acabi un temps. Per tant, necessitarem una variable per al temps i una altra per al marcador.
 
