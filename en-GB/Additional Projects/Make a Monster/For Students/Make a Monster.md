@@ -25,7 +25,8 @@ This should take you a whole club session so no need to rush. Ask for more blank
 
 # **Step 2:** Splitting your monster up into parts {.activity}
 
-When you’re happy with the design, split your monster up into what will be individual sprites, such as arms, legs, head etc. Having your monster made up of separate sprites will give you better control over animation, and allow it to do several things at once.
+When you’re happy with the design, split your monster up into what will be individual sprites, such as arms, legs, head etc. Having your monster made up of separate sprites will give you better control over animation,
+and allow it to do several things at once.
 
 Draw the parts on a piece of paper and label them.
 
