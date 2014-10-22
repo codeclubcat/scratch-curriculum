@@ -118,8 +118,7 @@ Ara volem que el Peix Gros es mengi la presa! Hi ha dues coses que haurien de pa
 Proveu el joc un altre cop. Hi trobeu algun problema? Fixeu-vos que la presa desapareix en tocar qualsevol part del Peix Gran. A més, també es podria donar la situació que el Peix Gran esperés 3 segons i es tornés a menjar la presa en el moment que tornés a aparèixer. Això no és just!
 
 + Com ho podríem fer perquè la presa només desaparegués si està tocant la boca del Peix Gros? Podríem utilitzar el bloc `tocant el color` {.blocklightblue} i veure si està tocant la dent blava del Peix Gros. Per provar aquesta opció, canvieu el bloc `tocant` {.blocklightblue} pel bloc `tocant el color` {.blocklightblue} al programa, cliqueu al selector de color del bloc i seguidament a la dent del Peix Gros. 
-
-+ Seguidament, fent servir el bloc `ves a` {.blockblue} amb valors a l'atzar pels valors x i y, podem fer que la presa es mogui a un punt aleatori abans de reaparèixer de nou a l'escenari.
++ Seguidament, fent servir el bloc `ves a` {.blockblue} amb valors a l'atzar pels valors **x** i **y**, podem fer que la presa es mogui a un punt aleatori abans de reaparèixer de nou a l'escenari.
 ```scratch
 	quan la BANDERA VERDA es premi
 	per sempre		
@@ -132,11 +131,13 @@ Proveu el joc un altre cop. Hi trobeu algun problema? Fixeu-vos que la presa des
 			vés a x: (nombre a l'atzar entre (-220) i (220)) y: (nombre a l'atzar entre (-170) i (170))
 			mostra
 ```
+
 ## Proveu el projecte {.flag}
 
 Proveu el joc un altre cop: la presa, només desapareix quan toca la boca del peix? Reapareix en un punt a l'atzar de l'escenari en comptes del mateix lloc on el Peix se l'havia menjat?
 
-El peix ha de saber quan s'ha empassat alguna cosa per poder reproduir un so i canviar de vestit. Per fer això, podem fer que la presa, abans de desaparèixer, enviï un missatge indicant que se l'han empassat. ```scratch
+El peix ha de saber quan s'ha empassat alguna cosa per poder reproduir un so i canviar de vestit. Per fer això, podem fer que la presa, abans de desaparèixer, enviï un missatge indicant que se l'han empassat. 
+```scratch
     quan la BANDERA VERDA es premi
 	per sempre		
 		mou-te (2) passos
