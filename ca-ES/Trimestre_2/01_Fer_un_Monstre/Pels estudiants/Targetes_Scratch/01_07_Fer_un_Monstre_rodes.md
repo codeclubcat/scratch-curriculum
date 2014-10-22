@@ -10,9 +10,7 @@ materials: "*.sb2"
 ## Llista de tasques {.check}
 
 + Per fer que una roda sembli que es mogui, haurem de **rotar-la** i moure-la una mica cada com rebem un **missatge de moviment**.
-
-
-```blocks
+```scratch
 	quan rebi [mogut esquerra v]
 		suma ((moure velocitat) * (-1)) a x
 		gira ccw (15) graus

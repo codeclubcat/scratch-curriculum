@@ -12,7 +12,6 @@ materials: "*.sb2"
 + Podeu fer que els ulls del vostre monstre segueixin el ratolí per tota la pantalla. Penseu que el vostre monstre pot tenir tants ulls com vulgueu! Per fer que els ulls del monstre segueixin sempre el punter del ratolí necessitem el bloc  `per sempre`{.blockyellow}.
 
   Una vegada hàgim activat la **bandera verda** voldrem que els ulls apuntin `per sempre`{.blockyellow} a la direcció del punter del ratolí i que es re-ajustin a cada fracció de segon. 
-
 ```scratch
 quan la BANDERA VERDA es premi
 	per sempre

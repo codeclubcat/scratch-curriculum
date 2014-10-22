@@ -11,8 +11,7 @@ materials: "*.sb2"
 
 
 + Per generar un moviment dels tentacles, podeu **rotar-los** i **canviar-los** la mida utilitzant un bloc `aleatori`{.blockgreen} amb valors baixos, i llavors esperar un període curt de temps abans de tornar-los a la forma original.
-
-```blocks
+```scratch
 	assigna a [rotacioTentacle v] el valor (nombre a l'atzar entre (1) i (20))
 	assigna a [midaTentacle v] el valor (nombre a l'atzar entre (1) i (10))
 	augmenta (midaTentacle) la mida
@@ -22,5 +21,5 @@ materials: "*.sb2"
 	gira cw (rotacioTentacle) graus
 ```
 	
- 	***(Tingueu en compte que estem multiplicant per -1 per tenir els valors negatius de midaTentacle)**
+***(Tingueu en compte que estem multiplicant per -1 per tenir els valors negatius de midaTentacle)**
 	

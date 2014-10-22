@@ -7,6 +7,11 @@
 
     "projects": [
         {
+        	    "number":   0,
+             "filename": "00_Introducció/introduccio.md",
+             "pdf":      "00_Introducció/introduccio.pdf"
+        },
+        {
             "number":   1,
             "filename": "01_Felix_i_Herbert/felix_i_herbert.md",
             "pdf":      "01_Felix_i_Herbert/felix_i_herbert.pdf",

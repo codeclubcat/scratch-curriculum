@@ -10,8 +10,6 @@ materials: "*.sb2"
 ## Llista de tasques { .check}
 
 + Com que el monstre estarà compost per moltes **parts (objectes)**, ens haurem d'assegurar que tots els moguin a la vegada. En comptes d'afegir comandes de moviment a cada part  podem simplement afegir controls al cos del personatge i fer servir `envia a tots`{.blockbrown} per controlar cada una de les parts. Així, quan el vostre **objecte Tentacle** (o qualsevol altre part) rebi un missatge `mogut dreta`{.blockbrown}, es podrà moure cap a la dreta. 
-
-
 ```scratch
 	// al personatge Fantasma
 	quan la tecla [fletxa dreta v] es premi
@@ -22,7 +20,6 @@ materials: "*.sb2"
 		suma ((velocitat_Moviment) * (-1)) a x
 		envia a tots [mogut dreta v]
 ```
-
 ```scratch
 	// al personatge tentacle
 	quan rebi [mogut dreta v]
@@ -34,7 +31,6 @@ materials: "*.sb2"
 + Using ``{.blockbrown} also means if we want to change the way our movement commands work, we only have to change one set of scripts. **Have a look at this example:**
 
 + Un altre avantatge d'utilitzar  `envia a tots`.{.blockbrown} és que si volem canviar la forma com es mou el personatge, només ho hem de fer en un programa. **Mireu l'exemple següent:** 
-
 ```scratch
 	//al Personatge Fantasma
 	quan la tecla [fletxa dreta v] es premi
@@ -60,9 +56,6 @@ materials: "*.sb2"
 
 
 + També podeu intentar animar el cos del robot fent servir canvis en el `vestit`{.blockpurple}, activant-los cada cop que es rep un missatge.
-
-
-
 ```scratch
 	quan rebi [mogut dret v]
 	següent vestit

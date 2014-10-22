@@ -5,5 +5,45 @@
     "number": 2,
     "title": "Scratch Avançat",
 
-    "projects": []
+    "projects": [
+       {
+          "title":     "Fer un Monstre",
+          "number":    1,
+          "filename":  "01_Fer_un_Monstre/Pels estudiants/01_Fer_un_Monstre.md",
+          "pdf":       "01_Fer_un_Monstre/Pels estudiants/01_Fer_un_Monstre.pdf",
+          "note":      "01_Fer_un_Monstre/Notes pels caps de club/Notes.md",
+          "note_pdf":  "01_Fer_un_Monstre/Notes pels caps de club/Notes.pdf",
+          "materials": "01_Fer_un_Monstre/Notes pels caps de club/Scratch files/monster_examples/*.sb",
+          "extras": [
+             {
+                "name": "Ulls",
+                "note": "01_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/01_01_Fer_un_Monstre_Ulls.md"
+             },
+             {
+                "name": "Braç Articulat",
+                "note": "01_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/01_02_Fer_un_Monstre_Braç_articulat.md"
+             },
+             {
+                "name": "Cames",
+                "note": "01_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/01_03_Fer_un_Monstre_Cames.md"
+             },
+             {
+                "name": "Boques",
+                "note": "01_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/01_04_Fer_un_Monstre_Boques.md"
+             },
+             {
+                "name": "Moviment",
+                "note": "01_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/01_05_Fer_un_Monstre_Moviment.md"
+             },
+             {
+                "name": "Tentacles",
+                "note": "01_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/01_06_Fer_un_Monstre_Tentacles.md"
+             },
+             {
+                "name": "Rodes",
+                "note": "01_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/01_07_Fer_un_Monstre_rodes.md"
+             }
+          ]
+       }
+    ]
 }
