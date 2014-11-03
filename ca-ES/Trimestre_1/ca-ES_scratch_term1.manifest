@@ -52,6 +52,13 @@
             "pdf":      "06_Cursa_pel_desert/Cursa_pel_Desert.pdf",
             "note":     "06_Cursa_pel_desert/Notes_per_als_caps_de_club.md",
             "note_pdf": "06_Cursa_pel_desert/Notes_per_als_caps_de_club.pdf"
+        }, 
+        {
+            "number":   7,
+            "filename": "07_Que_es/que_es.md",
+            "pdf":      "07_Que_es/que_es.pdf",
+            "note":     "07_Que_es/Notes_per_als_caps_de_club.md",
+            "note_pdf": "07_Que_es/Notes_per_als_caps_de_club.pdf"
         }
     ]
 }
