@@ -20,9 +20,9 @@ Construirem un joc on __el gat Fèlix__ i el ratolí __Herbert__ juguen a atrapa
 ## Llista de tasques { .check } 
 
 + Creeu un nou projecte.
-+ Feu doble clic a l'escenari i canvieu a la pestanya dels fons, llavors seleccioneu el fons __indoors/hall__. Suprimiu el fons blanc original.
++ Feu doble clic a l'escenari i canvieu a la pestanya dels fons, llavors seleccioneu el fons __interiors/hall__. Suprimiu el fons blanc original.
 + Canvieu el nom del personatge per Fèlix.
-+ Assegureu-vos que en Fèlix només miri a esquerra utilitzant el bloc __"fixa la rotació a__
++ Assegureu-vos que en Fèlix només miri a esquerra utilitzant el bloc __fixa la rotació a__
 + Creeu aquest programa:
 ```scratch
 	Quan la BANDERA VERDA es premi
@@ -83,7 +83,7 @@ Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.
 
 ## Llista de tasques { .check }
 
-+ Modifiqueu el programa d'en Felix així:
++ Modifiqueu el programa de'n Felix així:
 ```scratch
 	Quan la BANDERA VERDA es premi
 	fixa la rotació a [esquerra-dreta v]
@@ -115,7 +115,7 @@ En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en u
 
 ## Llista de tasques { .check }
 
-+ Canvieu el programa d'en Fèlix per tal d'enviar aquest missatge quan atrapi en Herbert.
++ Canvieu el programa de'n Fèlix per tal d'enviar aquest missatge quan atrapi en Herbert.
 ```scratch
 	Quan la BANDERA VERDA es premi
 	per sempre
@@ -132,7 +132,7 @@ En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en u
 	end
 ```
 
-+ Importeu un nou vestit per en Herbert de __fantasy/ghost2-a__.
++ Importeu un nou vestit per en Herbert de __fantasia/ghost2-a__.
 + Editeu-l'ho per fer-lo més petit. N'hi hauria d'haver prou amb sis clics al botó __encongir__.
 + Canvieu els noms dels vestits d'en Herbert de manera que vestit de ratolí s'anomeni __'viu'__ i el de fantasma __'fantasma__'.
 + Creeu un nou programa per tal de convertir en Herbert en un fantasma:
@@ -184,7 +184,7 @@ Feu click a la bandera verda.
 
 + El marcador, augmenta una unitat per segon?
 + Quan en Fèlix atrapa en Herbert, el marcador disminueix cent unitats?
-+ Què passa quan atrapeu en Herbert abans que el marcador arrivi a cent unitats? 
++ Què passa quan atrapeu en Herbert abans que el marcador arribi a cent unitats? 
 + Quan comenceu una nova partida, el marcador torna a zero?
 
 ## Deseu el projecte { .save }

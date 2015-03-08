@@ -16,7 +16,7 @@ Aquest projecte inclou:
 3. Transmissió de missatges
 
 # Recursos
-Podeu aconseguir els recursos que us calen per fer aquest projecte utilitza a les carpetes Scratch Backgrounds and Costumes
+Podeu aconseguir els recursos que us calen per fer aquest projecte utilitza a les carpetes Scratch Escenaris i Vestits.
 
 # Targetes Scratch necessàries
 Segueix el ratolí (Follow the mouse)
