@@ -22,7 +22,7 @@ Avui ens familiaritzarem amb la <a href="http://scratch.mit.edu">web d'scratch</
 + Creem un usuari i contrasenya senzills, i ens l'apuntem a l'agenda.
 + Ja podem començar!
 
-# Pas 2: Identificar les diferents parst de la pàgina d'scratch { .activity }
+# Pas 2: Identificar les diferents parts de la pàgina d'scratch { .activity }
 
 [![Vídeo del Pas 2 de la Introducció](2.png)](http://www.youtube.com/watch?v=m1j4z_rI8_Q)
 
@@ -54,8 +54,9 @@ Si cliquem la pestanya **Crea** se'ns obre el panell d'edició de programes d'sc
 
 ## Llista de tasques { .check }
 
-+ Cliqueu el petit interrogant que apareix a la part superior dreta de la pàgina.
-+ Dins del menú **Començant** trieu la pràctica **Introducció pas a pas**. Se us obrirà un menú de 10 passos que explica com crear un personatge que es mou i fa diferents sons.
++ A la pàgina principal d'scratch premeu **crea**.
++ Cliqueu el petit interrogant que apareix a la part superior dreta de la pàgina, és l'ajuda.
++ Dins del menú **Començant** trieu la pràctica **Start moving**. Se us obrirà un menú de 13 passos que explica com crear un personatge que es mou i fa diferents sons.
 + Desa el projecte amb el nom **introducció_el_teu_nom**.
 
 # Pas 4: Compartir el projecte i ubicar-lo a l'estudi { .activity }
