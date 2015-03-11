@@ -24,12 +24,12 @@ Aquest és un joc semblant a les màquines escurabutxaques. Consisteix en anar c
 
 **Anem a importar imatges diferents per el nostre joc**
 
-+ Comenceu un projecte d'Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant **Esborra**
++ Comenceu un projecte d'Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant **Esborra**.
 + Primer de tot afegim un fons de la galeria per a l'escenari. Escolliu el fons **rays** de la categoria **Altres** i llavors esborreu el fons blanc original.
 + Importeu un nou personatge
-+ Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat **things/bananas1**, però podeu triar qualsevol imatge que us agradi.
-+ Cliqueu la '**i**' blava del personatge i canvieu-li el nom a 'Fruita'.
-+ Cliqueu la pestanya Vestits i importeu dues coses més. Ara ja teniu 3 personatges (nosaltres vam utilitzar **animals/bee1** i **things/lego**, però podeu utilitzar el que us vingui més de gust).
++ Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat **coses/bananas1**, però podeu triar qualsevol imatge que us agradi.
++ Cliqueu la '**i**' blava del personatge i canvieu-li el nom a 'Fruita1'.
++ Cliqueu la pestanya Vestits i importeu dues coses més. Ara ja teniu 3 personatges (nosaltres vam utilitzar **animals/bee1** i **coses/lego**, però podeu utilitzar el que us vingui més de gust).
 
 Ara que tenim els vestits, volem que el personatge se'ls vagi canviant.
 
@@ -80,29 +80,29 @@ Els vestits canvien a una velocitat raonable?
 
 Perfecte! Ara farem que el personatge canvii el vestit per sempre, però com ho fem perquè parin de canviar de vestit quan hi cliquem a sobre?
 
-+ Creeu una nova variable clicant a la paleta `Dades` i després al botó `Crea una Variable`. Anomeneu-la `parat` { .blockorange } i seleccioneu la opció "Només per aquest personatge", i també desmarqueu la caixeta al costat de la variable perquè no es vegi a l'escenari.
++ Creeu una nova variable clicant a la paleta `Dades` i després al botó `Crea una Variable`. Anomeneu-la `parat` { .blockorange } i seleccioneu la opció **"Només per aquest personatge"**, i també desmarqueu la caixeta al costat de la variable perquè no es vegi a l'escenari.
 
-+ Al principi del joc, el personatge no haurà estat clicat i per tant posarem el valor de la variable a **"NO"**.
++ Al principi del joc, el personatge no haurà estat clicat i per tant posarem el valor de la variable a **0**.
 ```scratch
    quan la BANDERA VERDA es premi
-      assigna a [parat v] el valor [NO]
+      assigna a [parat v] el valor [0]
       per sempre
          següent vestit
          espera (0.1) segons
 ```   
 
-+ Ara posarem la variable `parat` { .blockorange } a **"SI"** quan algú clica el personatge.
++ Ara posarem la variable `parat` { .blockorange } a **1** quan algú clica el personatge.
 ```scratch
    quan es cliqui aquest personatge
-      assigna a [parat v] el valor [SI]
+      assigna a [parat v] el valor [1]
 ```    
 
-+ Finalment, hem d'aturar els canvis de vestit quan la variable `parat` { .blockorange } tingui el valor "SI". Afegiu un bloc `si...llavors` { .blockyellow } i un bloc de **comparació** `[] = []` { .blockgreen } (a la paleta dels *Operadors*) per mirar si `parat` { .blockorange } està a "NO".
++ Finalment, hem d'aturar els canvis de vestit quan la variable `parat` { .blockorange } tingui el valor "1". Afegiu un bloc `si...llavors` { .blockyellow } i un bloc de **comparació** `[] = []` { .blockgreen } (a la paleta dels *Operadors*) per mirar si `parat` { .blockorange } està a "0".
 ```scratch
    quan la BANDERA VERDA es premi
-   assigna a [parat v] el valor [NO]
+   assigna a [parat v] el valor [0]
    per sempre
-      si <(parat) = [NO]> llavors
+      si <(parat) = [0]> llavors
          següent vestit
          espera (0.1) segons
 ```
@@ -129,8 +129,9 @@ Premeu bandera verda, espereu un moment i després cliqueu un personatge.
 
 Ara necessitem crear els altres personatges per tal de poder jugar al nostre joc!
 
-+ **Dupliqueu el personatge** (Fruita) clicant-hi a sobre amb el botó dret.
++ **Dupliqueu el personatge** (Fruita1) clicant-hi a sobre amb el botó dret.
 + Dupliqueu-lo una altra vegada. Ara heu de tenir 3 personatges sobre l'escenari.
++ Anomeneu-los **Fruita1**, **Fruita2** i **Fruita3**
 + Moveu cada personatge per tal que estiguin en línia. Feu-los una mica més petits si ho necessiteu.
 
 ## Proveu el projecte { .flag }
@@ -148,7 +149,7 @@ Premeu bandera verda. Totes les animacions haurien de canviar. Proveu de parar-l
 
 Anem a fer que quan es premi la bandera verda, cada personatge comenci amb un vestit a l'atzar.
 
-Quan engegueu el joc just després de carregar-lo, tots els personatges mostren el mateix vestit i canvien plegats. Seria més interessant (i difícil) si canviéssin de forma menys predictible.
+Quan engegueu el joc just després de carregar-lo, tots els personatges mostren el mateix vestit i canvien plegats. Seria més interessant (i difícil) si canviessin de forma menys predictible.
 
 ## Llista d'activitats { .check }
 
@@ -157,10 +158,10 @@ Quan engegueu el joc just després de carregar-lo, tots els personatges mostren 
 + També podem fer servir aquest bloc en el `per sempre` { .blockyellow } i així el personatge canviï sempre a un vestit diferent cada vegada.
 ```scratch
    quan la BANDERA VERDA es premi
-      assigna a [parat v] el valor [NO]
+      assigna a [parat v] el valor [0]
       canvia el vestit a <nombre a l'atzar entre (1) i (3)>
       per sempre
-         si <(parat) = [NO]> llavors
+         si <(parat) = [0]> llavors
             canvia el vestit a <nombre a l'atzar entre (1) i (3)>
             espera (0.1) segons
 ```
@@ -206,13 +207,13 @@ Primer, anem a crear un fons diferent per mostrar quan el joc s'hagi acabat.
 + Cliqueu a l'escenari i després a la pestanya `Fons`. Canvieu el nom del fons actual per **"Jugant"**.
 + Dupliqueu el fons i afegiu un text a la còpia que posi **"Game Over"**. Podeu canviar el tamany del text clicant-lo i arrossegant alguna de les cantonades. Poseu el nom **"Game Over"** a aquest fons.
 + Cliqueu a la pestanya `Programes` per a l'escenari i feu que el fons "Jugant" sigui el que s'utilitza quan el joc comença.
-+ Com podem detectar quan tots els personatges s'han parat? Recordeu que hem utilitzat la variable `parat` { .blockorange } per saber si un personatge ha estat clicat? Anem a mirar la variable `parat` { .blockorange } per al personatge **Fruit3** per veure si el joc s'ha acabat. Seleccioneu el personatge Fruit3 i busqueu el bloc `[posicio x] de [Fruit3]` { .blockblue } de la paleta `Sensing` {
++ Com podem detectar quan tots els personatges s'han parat? Recordeu que hem utilitzat la variable `parat` { .blockorange } per saber si un personatge ha estat clicat? Anem a mirar la variable `parat` { .blockorange } per al personatge **Fruit3** per veure si el joc s'ha acabat. Seleccioneu el personatge Fruit3 i busqueu el bloc `[posicio x] de [Fruit3]` { .blockblue } de la paleta `Sensors` {
 .blocklightgrey }, però canviant **posició x** a `parat` { .blockorange }.
 ```scratch
    quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
-         si <([parat v] de [Fruita3]) = [SI]> llavors
+         si <([parat v] de [Fruita3]) = [1]> llavors
             canvia el fons a [Game Over v]
 ```
 
@@ -222,13 +223,13 @@ Cliqueu la bandera verda. Apareix el missatge "Game Over" quan cliqueu el tercer
 
 Què succeeix si pareu la Fruita3 abans d'haver parat els dos altres personatges? Anem a modificar el programa per tal que funcioni independentment de l'ordre en què es cliquin els personatges.
 
-+ Per mirar que **tots tres** personatges tenen la variable `parat` { .blockorange } amb el valor **SI**, podem fer servir el bloc `<> i <>` { .blockgreen }. Aquest és un bloc que pot ser difícil de muntar, intenteu fer-ho per passos i amb molta cura.
++ Per mirar que **tots tres** personatges tenen la variable `parat` { .blockorange } amb el valor **1**, podem fer servir el bloc `<> i <>` { .blockgreen }. Aquest és un bloc que pot ser difícil de muntar, intenteu fer-ho per passos i amb molta cura.
 ```scratch
    quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
-         si <<<([parat v] de [Fruita1 v]) = [SI]> i <([parat v] de [Fruita2 v]) = [SI]>> i <([parat v] de [Fruita1 v]) = [SI]>> llavors
-            canvia el fons a [Game Over v]
+         si <<<([parat v] de [Fruita1 v]) = [1]> i <([parat v] de [Fruita2 v]) = [1]>> i <([1rat v] de [Fruita3 v]) = [1]>> llav1s
+            canvia el fons a [Game1ver v]
 ```
 
 ## Proveu el projecte { .flag }
@@ -255,7 +256,7 @@ L'objectiu del joc és clicar als personatges i parar-los tots quan tenen el mat
    quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
-         si <<<([parat v] de [Fruit1 v]) = [YES]> i <([parat v]  of [Fruit2 v]) = [YES]>> and <([stopped v]  of [Fruit3 v]) = [YES]>> llavors
+         si <<<([parat v] de [Fruit1 v]) = [1]> i <([parat v]  of [Fruit2 v]) = [1]>> and <([parat v]  of [Fruit3 v]) = [1]>> llavors
             si <<([vestit nr v] de [Fruit1 v]) = ([vestit nr v]  of [Fruit2 v])> and <([vestit nr v]  of [Fruit2 v]) = ([vestit nr v]  of [Fruit3 v])>> llavors
                canvia el fons a [Guanyar v]
             si no
@@ -272,10 +273,9 @@ Cliqueu la bandera verda. Apareix el missatge correcte quan el joc s'acaba? Què
 
 A l'hora de jugar, us trobareu amb persones de diferents habilitats. **Com ajustareu la dificultat del joc depenent del jugador?**
 
-Una manera de fer-ho és **ajustar la velocitat de canvi dels vestits**. Podeu utilitzar una variable, que s'anomeni `retard` { .blockorange }, que ens doni la durada de cada bloc `espera` { .blockorange } per a cada personatge. Si el jugador guanya la partida, la variable `retard` { .blockorange } es pot escurçar una mica (per fer el joc més difícil). Si el jugador perd la partida, la variable
-`retard` { .blockorange } es pot augmentar una mica (per fer el joc més fàcil).
+Una manera de fer-ho és **ajustar la velocitat de canvi dels vestits**. Podeu utilitzar una variable, que s'anomeni `retard` { .blockorange }, que ens doni la durada de cada bloc `espera` { .blockorange } per a cada personatge. Si el jugador guanya la partida, la variable `retard` { .blockorange } es pot escurçar una mica (per fer el joc més difícil). Si el jugador perd la partida, la variable `retard` { .blockorange } es pot augmentar una mica (per fer el joc més fàcil).
 
-Probablement també haureu de pensar en fer servir un manera diferent de començar el joc (que no sigui `quan la bandera verda es premi` { .blockyellow }, perquè així es podran guardar valors que es podran recordar entre diferents partides.
+Probablement també haureu de pensar en fer servir un manera diferent de començar el joc (que no sigui `quan la bandera verda es premi` { .blockyellow }), perquè així es podran guardar valors que es podran recordar entre diferents partides.
 
 ## Deseu el projecte { .save }
 
