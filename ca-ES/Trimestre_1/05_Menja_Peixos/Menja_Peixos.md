@@ -4,7 +4,7 @@ level: Nivell 2
 language: ca-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.sb2", "recursos/*.mp3", "recursos/*.png"]
+materials: ["recursos/*.mp3", "recursos/*.png"]
 ...
 
 # Introducció {.intro}
@@ -23,7 +23,7 @@ Aquest projecte utilitza recursos externs (no inclosos a l'Scratch). Baixeu-vos 
 ## Llista de tasques {.check}
 
 + Creeu un nou projecte.
-+ Seleccioneu l'escenari i cliqueu a la pestanya del Fons. Llavors, seleccioneu el fons **nature/underwater3** i suprimiu-ne l'original.
++ Seleccioneu l'escenari i cliqueu a la pestanya del Fons. Llavors, seleccioneu el fons **natura/underwater3** i suprimiu-ne l'original.
 + Canvieu el nom del personatge 'Sprite1' per 'Peix Gros'.
 + Seleccioneu de la carpeta on us heu baixat els vestits, el del Peix Gros __peix-gros1__ i borreu els vestits anteriors ('vestit1' i 'vestit2'). 
 + Aneu a la `i` blava del personatge i marqueu el botó amb dues fletxes per tal que el personatge només miri a esquerra o dreta.
@@ -59,7 +59,7 @@ Cliqueu la bandera verda.
 + Canvieu també els passos que el Peix Gros es mou a un valor més gran (p. ex. 20) o més petit (p. ex. 1 o fins i tot 0).
 
 <!------------------------------------------------------>
-# Pas 2: Afegiu a la presa {.activity}
+# Pas 2: Afegiu la presa {.activity}
 
 Ja és hora de posar alguna cosa que el Peix Gros es pugui menjar!
 
@@ -176,7 +176,7 @@ Cliqueu la bandera verda.
 
 ## Coses a pensar
 
-Perquè tenim que afegir el bloc `mostra` {.blockblue} al començament del programa de la presa?  Penseu que passaria si la presa fos empassada i el joc s'aturés abans de que reaparegués. Què passaria si el joc es reiniciés en aquest mateix instant?
+Perquè hem d'afegir el bloc `mostra` {.blockblue} al començament del programa de la presa?  Penseu que passaria si la presa fos empassada i el joc s'aturés abans de que reaparegués. Què passaria si el joc es reiniciés en aquest mateix instant?
 
 __Ben fet! Heu acabat el joc principal.  Però hi han moltes coses més que podeu fer-hi al joc.  Accepteu un desafiament?__
 

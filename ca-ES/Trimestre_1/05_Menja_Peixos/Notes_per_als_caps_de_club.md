@@ -19,7 +19,7 @@ Aquest projecte tracta els conceptes:
 
 
 # Recursos
-Aquest projecte utilitza recursos inclosos les carpetes 'Backgrounds' i 'Costumes' de l'Scratch. Els vestits pel Peix Gros es poden trobar als packs per a Voluntaris. 
+Aquest projecte utilitza recursos inclosos les carpetes 'Fons' i 'Vestits' de l'Scratch. Els vestits pel Peix Gros es poden trobar als materials que us heu descarregat.
 
 # Targes Scratch necessàries
 * Animeu-lo
