@@ -14,11 +14,11 @@ Aquest projecte inclou:
 * Respondre als clics de ratolí
 * Canviar l'aparença dels personatges 
 * Reproduir sons
-* Enviament i recepció de missatges
-* Coordenades
+* Enviar i rebre de missatges
+* Treballar amb coordenades cartesianes
 
 #Recursos
-Podeu aconseguir els recursos que us calen per fer aquest projecte a les carpetes *Scratch Backgrounds and Costumes* i també a la carpeta *Recursos* que us ve amb aquesta pràctica.
+Podeu aconseguir els recursos que us calen per fer aquest projecte a les carpetes **Scratch Fons i Vestits** i també a la carpeta **recursos** que us ve amb aquesta pràctica.
 
 #Targetes Scratch necessàries
 Canvi de color, Lliscament

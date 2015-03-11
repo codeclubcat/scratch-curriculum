@@ -16,12 +16,12 @@ En aquest projecte, llençarem focs artificials al cel d'una ciutat.
 # Pas 1: Crear un coet que vola apuntant el ratolí { .activity }
 
 Importem les imatges necessàries per al nostre joc (per fer aquest pas
-cal descarregar primer el fitxer **.zip** de recursos associats a aquest projecte).
+cal descarregar primer el fitxer **.zip** de recursos associats a aquest projecte). Descomprimiu el fitxer. Les imatges i sons les trobareu dins una carpeta anomenada **recursos**.
 
 ## Llista de tasques { .check }
 
 + Creeu un nou projecte Scratch. Esborreu el gat clicant-lo amb el botó dret i seleccionant **Esborra**.
-+ Canvieu l'escenari per **outdoor/city-with-water**.
++ Canvieu l'escenari per **exteriors/city-with-water**.
 + Utilitzeu el botó `escull un personatge des d'un fitxer` (una carpeta amb una fletxa amunt) per afegir el personatge **Coet** al projecte (utilitzeu el vestit **recursos/coet.png**).
 + Feu que el coet desaparegui quan es premi la bandera verda.
 ```scratch
@@ -29,7 +29,7 @@ quan la BANDERA VERDA es premi
     amaga
 ```
 
-+ Ara volem que el coet apunti el ratolí quan el cliquem. Afegiu el bloc **quan es cliqui la tecla espai**. En aquest bloc feu que el coet aparegui i llisqui en direcció al punter del ratolí.
++ Ara volem que el coet apunti el ratolí quan premem la tecla espai. Afegiu el bloc **quan es cliqui la tecla espai**. En aquest bloc feu que el coet aparegui i llisqui en direcció al punter del ratolí.
 ```scratch
 quan la tecla [espai v] es premi
     mostra
@@ -198,7 +198,7 @@ quan rebi [explota v]
 
 Premeu la bandera verda.
 
-+ El gràfic d'explosió d'escampa des del centre del coet i creix lentament?
++ El gràfic d'explosió s'escampa des del centre del coet i creix lentament?
 
 ## Per saber-ne més { .try }
 
