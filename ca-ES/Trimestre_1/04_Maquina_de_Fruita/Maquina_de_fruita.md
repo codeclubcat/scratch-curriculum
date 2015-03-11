@@ -4,7 +4,6 @@ level: Nivell 2
 stylesheet: scratch
 language: ca-ES
 embeds: "*.png"
-materials: "*.sb2"
 ...
 
 # Introduccció { .intro }
