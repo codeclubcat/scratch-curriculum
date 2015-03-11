@@ -4,7 +4,7 @@ level: Nivell 1
 language: ca-ES
 stylesheet: scratch
 embeds: "*.png"
-materials: ["*.sb2", "recursos/*.wav", "recursos/*.png"]
+materials: ["recursos/*.wav", "recursos/*.png"]
 ...
 
 # Introducció { .intro }
