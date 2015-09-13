@@ -1,0 +1,72 @@
+{
+    "description": "Scratch és una manera simple i divertida de programar arrossegant i ajuntant blocs.",
+    "id": "scratch_01",
+    "language": "ca-ES",
+    "number": 1,
+    "title": "Scratch Inicial",
+
+    "projects": [
+        {
+        	    "number":   0,
+             "filename": "00_Introducció/introduccio.md",
+             "pdf":      "00_Introducció/introduccio.pdf"
+        },
+        {
+            "number":   1,
+            "filename": "01_Felix_i_Herbert/felix_i_herbert.md",
+            "pdf":      "01_Felix_i_Herbert/felix_i_herbert.pdf",
+            "note":     "01_Felix_i_Herbert/Notes_per_als_caps_de_club.md",
+            "note_pdf": "01_Felix_i_Herbert/Notes_per_als_caps_de_club.pdf"
+        },
+        {
+
+            "number":   2,
+            "filename": "02_Caça_la_Bruixa/caça_la_bruixa.md",
+            "pdf":      "02_Caça_la_Bruixa/caça_la_bruixa.pdf",
+            "note":     "02_Caça_la_Bruixa/Notes_per_als_caps_de_club.md",
+            "note_pdf": "02_Caça_la_Bruixa/Notes_per_als_caps_de_club.pdf"
+        },
+        {
+            "number":   3,
+            "filename": "03_Focs_Artificials/focs_artificials.md",
+            "pdf":      "03_Focs_Artificials/focs_artificials.pdf",
+            "note":     "03_Focs_Artificials/Notes_per_als_caps_de_club.md",
+            "note_pdf": "03_Focs_Artificials/Notes_per_als_caps_de_club.pdf"
+        },
+        {
+            "number":   4,
+            "filename": "04_Maquina_de_Fruita/Maquina_de_fruita.md",
+            "pdf":      "04_Maquina_de_Fruita/Maquina_de_fruita.pdf",
+            "note":     "04_Maquina_de_Fruita/Notes_per_als_caps_de_club.md",
+            "note_pdf": "04_Maquina_de_Fruita/Notes_per_als_caps_de_club.pdf"
+        },
+        {
+            "number":   5,
+            "filename": "05_Menja_Peixos/Menja_Peixos.md",
+            "pdf":      "05_Menja_Peixos/Menja_Peixos.pdf",
+            "note":     "05_Menja_Peixos/Notes_per_als_caps_de_club.md",
+            "note_pdf": "05_Menja_Peixos/Notes_per_als_caps_de_club.pdf"
+        },
+        {
+            "number":   6,
+            "filename": "06_Cursa_pel_desert/Cursa_pel_Desert.md",
+            "pdf":      "06_Cursa_pel_desert/Cursa_pel_Desert.pdf",
+            "note":     "06_Cursa_pel_desert/Notes_per_als_caps_de_club.md",
+            "note_pdf": "06_Cursa_pel_desert/Notes_per_als_caps_de_club.pdf"
+        }, 
+        {
+            "number":   7,
+            "filename": "07_Que_es/que_es.md",
+            "pdf":      "07_Que_es/que_es.pdf",
+            "note":     "07_Que_es/Notes_per_als_caps_de_club.md",
+            "note_pdf": "07_Que_es/Notes_per_als_caps_de_club.pdf"
+        },
+        {
+            "number":   9,
+            "filename": "09_Construiu_el_vostre_joc/Construiu_el_vostre_joc.md",
+            "pdf":      "09_Construiu_el_vostre_joc/Construiu_el_vostre_joc.pdf",
+            "note":     "09_Construiu_el_vostre_joc/Notes_per_als_caps_de_club.md",
+            "note_pdf": "09_Construiu_el_vostre_joc/Notes_per_als_caps_de_club.pdf"
+        }
+    ]
+}

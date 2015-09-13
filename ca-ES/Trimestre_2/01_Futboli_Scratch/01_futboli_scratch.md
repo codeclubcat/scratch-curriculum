@@ -7,7 +7,6 @@ embeds: "*.png"
 ...
 
 
-<!--![screenshot](scratch_table_football_screenshot.png)-->
 
 <!-- 
 ////////////////////////////////////////////////////////////////////// 
@@ -17,6 +16,7 @@ embeds: "*.png"
 ## Projecte de contribució de la comunitat { .challenge }
 
 Aquest projecte ha estat possible gràcies a [Mark Hardisty](https://twitter.com/hardistymark) (idea i diseny original) i [Codeclubcat](https://codeclubcat.org) (traducció, edició i formateig a projecte Code Club).
+
 
 <!--
 *************************************************************************************************
@@ -34,6 +34,8 @@ Pràctica 1 2n Trimestre. Nivell 3.
 
 
 En aquest projecte crearem una copa del món de futbol amb Scratch!
+
+![screenshot](scratch_table_football_screenshot.png)
 
 <!-- 
 ////////////////////////////////////////////////////////////////////// 
