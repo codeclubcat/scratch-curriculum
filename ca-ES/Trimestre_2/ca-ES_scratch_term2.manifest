@@ -6,18 +6,29 @@
     "title": "Scratch Avançat",
 
     "projects": [
-       {
-          "title":     "Fer un Monstre",
+	{			
+          "title":     "Preguntem les taules de multiplicar",
           "number":    1,
-          "filename":  "02_Fer_un_Monstre/Pels estudiants/02_Fer_un_Monstre.md",
-          "pdf":       "02_Fer_un_Monstre/Pels estudiants/02_Fer_un_Monstre.pdf",
+          "filename":  "00_Preguntem_les_taules/00_taules_multiplicar.md",
+          "note":      "00_Preguntem_les_taules/notes_per_als_caps_de_club.md"
+	},
+
+	{			
+          "title":     "Futbolí Scratch",
+          "number":    2,
+          "filename":  "01_Futboli_Scratch/01_futboli_scratch.md",
+          "note":      "01_Futboli_Scratch/notes_pels_caps_de_club.md"
+	},
+        {
+          "title":     "Fer un Monstre",
+          "number":    3,
+          "filename":  "02_Fer_un_Monstre/Pels estudiants/02_Fer_un_monstre.md",
           "note":      "02_Fer_un_Monstre/Notes pels caps de club/Notes.md",
-          "note_pdf":  "02_Fer_un_Monstre/Notes pels caps de club/Notes.pdf",
           "materials": "02_Fer_un_Monstre/Notes pels caps de club/Scratch files/monster_examples/*.sb",
           "extras": [
              {
                 "name": "Ulls",
-                "note": "02_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/02_02_Fer_un_Monstre_Ulls.md"
+                "note": "02_Fer_un_Monstre/Pels estudiants/Targetes_Scratch/02_01_Fer_un_Monstre_Ulls.md"
              },
              {
                 "name": "Braç Articulat",
